@@ -1,22 +1,22 @@
 # Smart Stock - Warehouse Management System
 
-Система складського обліку з розподілом ролей (Admin/Storekeeper), генерацією PDF-звітів та історією транзакцій.
+It features strict role-based access control, allowing Administrators to manage inventory and personnel, while Stockkeepers process incoming and outgoing transactions. The system ensures transparent tracking of all stock movements and provides automated PDF reporting for streamlined inventory audits.
 
-## Технології
+## Technologies
 - **Backend:** NestJS, MikroORM, PostgreSQL, JWT Auth, Swagger
 - **Frontend:** React, Lucide Icons, html2pdf.js
 
-### 1. Попередні вимоги
-- Встановлений [Node.js](https://nodejs.org/) v24.12.0+
-- Встановлений [PostgreSQL](https://www.postgresql.org/) v18.0+
+### 1. Prerequisites
+-  [Node.js](https://nodejs.org/) v24.12.0+
+-  [PostgreSQL](https://www.postgresql.org/) v18.0+
 
-### 2. Налаштування Бази Даних
-1. Створіть базу даних з назвою `smart_stock`.
+### 2. Database Settings
+1. Create a database named `smart_stock`.
 ```bash
 psql -U postgres -c "CREATE DATABASE smart_stock;"
 ```
 
-### 3. Запуск Бекенду
+### 3. Backend launch
 ```bash
 cd smart-stock-backend
 npm install
@@ -25,7 +25,7 @@ npm install
 
 npm run start
 ```
-### 4. Запуск Фронтенду
+### 4. Frontend launch
 
 ```bash
 cd smart-stock-frontend
